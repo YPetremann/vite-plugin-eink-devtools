@@ -1,0 +1,19 @@
+{
+  "name": "vite-plugin-eink-devtools",
+  "version": "0.1.0",
+  "description": "A Vite plugin for integrating DevTools for Eink displays",
+  "scripts": {
+    "build": "vite build",
+    "prepublishOnly": "npm run build",
+    "release": "bumpp --push --tag --commit && npm publish"
+  },
+  "devDependencies": {
+    "@types/node": "^24.2.0",
+    "bumpp": "^10.2.2",
+    "vite": "^7.0.6",
+    "vite-plugin-dts": "^4.5.4"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
