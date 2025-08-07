@@ -1,7 +1,40 @@
 {
   "name": "vite-plugin-eink-devtools",
+  "author": "YPetremann",
   "version": "0.1.0",
+  "license": "MIT",
   "description": "A Vite plugin for integrating DevTools for Eink displays",
+  "homepage": "https://github.com/ypetremann/vite-plugin-eink-devtools",
+  "keywords": [
+    "vite-plugin",
+    "eink",
+    "devtools"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ypetremann/vite-plugin-eink-devtools"
+  },
+  "bugs": {
+    "url": "https://github.com/ypetremann/vite-plugin-eink-devtools/issues"
+  },
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs.js",
+      "import": "./dist/index.es.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "publishConfig": {
+    "main": "dist/index.cjs.js",
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "vite build",
     "prepublishOnly": "npm run build",
